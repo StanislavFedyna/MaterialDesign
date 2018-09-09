@@ -1,37 +1,42 @@
-body{
-  padding: 0;
-  margin: 0;
-  font-family: 'Gamja Flower', cursive;
-  background: #000;
+body
+{
+    font-family: 'Gamja Flower', cursive;
+    margin: 0;
+    padding: 0;
+    background: #000;
 }
 
-h1{
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  font-size: 25em;
-  text-transform: uppercase;
-  background: url(../img/low-poly-bg.jpg);
-  color: #ffffff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color:transparent;
-  -webkit-text-stroke: 2px #000;
-  animation: move 20s linear infinite;
-  -webkit-animation: move 20s linear infinite;
+h1
+{
+    font-size: 25em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-animation: move 20s linear infinite;
+            animation: move 20s linear infinite;
+    text-transform: uppercase;
+    color: #fff;
+    background: url(../img/low-poly-bg.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #000;
 }
 
-@keyframes move{
-  0%{
-    background-position: 0 0;
-  }
-  100%{
-    background-position: 800px -800px;
-  }
+@keyframes move
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    100%
+    {
+        background-position: 800px -800px;
+    }
 }
